@@ -15,6 +15,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
+  <!-- NavBar -->
 
   <head>
     <nav class="navbar navbar-expand-lg bg-white">
@@ -54,7 +55,7 @@
     <hr>
   </head>
 
-
+  <!-- Carousel + Informative Card -->
   <section>
     <div class="container-fluid d-flex">
       <div class="row carousel-line justify-content-center"">
@@ -105,41 +106,103 @@
     </div>
   </section>
 
+  <!-- Quickly links -->
   <section>
-    <div class="container-fluid text-center">
-      <div class="row">
-        <div class="col">
-          <div class="card" style="width: 15rem; height: 13rem;">
-            <div class="card-body justify-content-between">
-              <h5 class="card-title">Notícias</h5>
-              <p class="card-text">Saiba quais são as novidades e últimas notícias do sindicato e do clube.</p>
-              <a href=""><button type="button" class="btn btn-outline-danger">Saiba Mais</button></a>
-            </div>
+    <div class="d-flex flex-row py-2 justify-content-center" style="gap: 25px;">
+      <div class="card" style="width: 15rem; height: 13rem;">
+        <div class="card-body">
+          <h5 class="card-title">Notícias</h5>
+          <div id="text-size">
+            <p class="card-text">Saiba quais são as novidades e últimas notícias do sindicato e do clube.</p>
           </div>
+          <a href=""><button type="button" class="btn btn-danger">Saiba Mais</button></a>
         </div>
-        <div class="col">
-          <div class="card" style="width: 15rem; height: 13rem;">
-            <div class="card-body">
-              <h5 class="card-title">Atividades</h5>
-              <p class="card-text">Conheça a programação e horários de nossas modalidades esportivas do clube.</p>
-              <a href=""><button type="button" class="btn btn-outline-danger">Saiba Mais</button></a>
-            </div>
+      </div>
+      <div class="card" style="width: 15rem; height: 13rem;">
+        <div class="card-body">
+          <h5 class="card-title">Atividades</h5>
+          <div id="text-size">
+            <p class="card-text">Conheça a programação e horários de nossas modalidades esportivas do clube.</p>
           </div>
+          <a href=""><button type="button" class="btn btn-danger">Saiba Mais</button></a>
         </div>
-        <div class="col">
-          <div class="card" style="width: 15rem; height: 13rem;">
-            <div class="card-body">
-              <h5 class="card-title">Agenda de eventos</h5>
-              <p class="card-text">Fique por dentro da nossa agenda de eventos para os próximos dias.</p>
-              <a href=""><button style="align-items: end;" type="button" class="btn btn-outline-danger">Saiba
-                  Mais</button></a>
-            </div>
+      </div>
+      <div class="card" style="width: 15rem; height: 13rem;">
+        <div class="card-body">
+          <h5 class="card-title">Agenda de eventos</h5>
+          <div id="text-size">
+            <p class="card-text">Fique por dentro da nossa agenda de eventos para os próximos dias.</p>
           </div>
+          <a style="align-self: flex-end;" href=""><button type="button" class="btn btn-danger">Saiba Mais</button></a>
         </div>
       </div>
     </div>
 
   </section>
+
+  <!-- Footer -->
+  <footer>
+    <div id="footer-size" class="container-fluid">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="form-floating mb-3">
+            <h5 id="" style="text-align: start;" class="fw-bolder">Denuncie</h5>
+            <p>Denuncie situações que expõem em risco sua integridade física e da
+              nossa categoria, assim como o desrespeito aos seus direitos.</p>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com">
+            <label for="floatingInputDisabled">Endereco</label>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2Disabled"
+              style="height: 100px"></textarea>
+            <label for="floatingTextarea2Disabled">O que esta acontecendo?</label>
+          </div>
+          <div class="form-floating mb-3">
+            <button type="button" class="btn btn-danger col-12">Enviar</button>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div>
+            <h5 style="text-align: start;">Sincidicato</h5>
+            <p>Avenida Loreto, 13, Jardim das Flores <br>
+              Araras - SP <br>
+              (19) 3541-4066 <br>
+              siticoma@linkway.com.br</p>
+
+          </div>
+          <div style="padding-top: 20px;">
+            <h6>Horário de Funcionamento</h6>
+            <p>Segunda a Sexta - 8h as 11:30h - 13h as 17h <br>
+              Sábado - 9h as 12h</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h5>Links Uteis</h5>
+          <div style="padding-top: 20px;">
+            <ul>
+              <div style="padding: 5px 5px;">
+                <li>Agenda</li>
+              </div>
+              <div style="padding: 5px 5px;">
+                <li>Benefícios Socios</li>
+              </div>
+              <div style="padding: 5px 5px;">
+                <li>Fale Conosco</li>
+              </div>
+              <div style="padding: 5px 5px;">
+                <li><a href=""><button></button></a></li>
+              </div>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
 
 </body>
 
