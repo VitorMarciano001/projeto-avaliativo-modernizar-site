@@ -1,0 +1,19 @@
+.carousel-line{
+    gap: 10px;
+    height: 480px;
+    padding: 20px 0;
+}
+
+.carousel-img-size{
+    height: 440px;
+    width: max-content;
+    border-radius: 15px;
+}
+
+#card-config{
+    height: 450px;
+}
+#card-fontSize{
+    font-size: 12px;
+    text-align: justify;
+}
