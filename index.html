@@ -215,11 +215,9 @@
     <footer>
       <div id="footer-size" class="container-fluid">
         <div class="row">
-          <div class="col-md-5 form">
+          <form id="myForm" class="col-md-5 form">
             <div class="form-floating mb-3">
-              <h5 id="" style="text-align: start" class="fw-bolder"
-                >Denuncie</h5
-              >
+              <h5 style="text-align: start" class="fw-bolder">Denuncie</h5>
               <p
                 >Denuncie situações que expõem em risco sua integridade física e
                 da nossa categoria, assim como o desrespeito aos seus
@@ -233,28 +231,33 @@
                 id="floatingInputDisabled"
                 placeholder="name@example.com"
               />
-              <label for="floatingInputDisabled">Endereco</label>
+              <label for="floatingInputDisabled">Endereço de e-mail</label>
             </div>
             <div class="form-floating mb-3">
               <textarea
                 class="form-control"
-                placeholder="Leave a comment here"
+                placeholder="Deixe um comentário aqui"
                 id="floatingTextarea2Disabled"
                 style="height: 100px"
               ></textarea>
               <label for="floatingTextarea2Disabled"
-                >O que esta acontecendo?</label
+                >O que está acontecendo?</label
               >
             </div>
             <div class="form-floating mb-3">
-              <button type="button" class="btn btn-danger col-12"
+              <button
+                id="style-button"
+                type="button"
+                class="btn btn-danger col-12"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
                 >Enviar</button
               >
             </div>
-          </div>
+          </form>
           <div class="col-md-4">
             <div>
-              <h5 style="text-align: start">Sincidicato</h5>
+              <h5 style="text-align: start">Sindicato</h5>
               <p
                 >Avenida Loreto, 13, Jardim das Flores <br />
                 Araras - SP <br />
@@ -271,12 +274,12 @@
             </div>
           </div>
           <div class="col-md-3">
-            <h5 style="text-align: start; padding-left: 10px">Links Uteis</h5>
+            <h5 style="text-align: start; padding-left: 10px">Links Úteis</h5>
             <div>
               <button class="btn default">Agenda</button>
             </div>
             <div>
-              <button class="btn default">Benefícios Socios</button>
+              <button class="btn default">Benefícios Sócios</button>
             </div>
             <div>
               <button class="btn default">Fale Conosco</button>
@@ -286,6 +289,41 @@
       </div>
     </footer>
 
-    <div id="myModal" class="modal-dialog modal-dialog-centered"> ... </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog text-white">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel"
+              >Confirmar Envio</h1
+            >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">Deseja confirmar o envio do formulário?</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              >Cancelar</button
+            >
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
+              >Enviar</button
+            >
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
